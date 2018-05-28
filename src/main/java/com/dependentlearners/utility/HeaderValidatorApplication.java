@@ -23,6 +23,7 @@ public class HeaderValidatorApplication {
 
 	@RequestMapping(method= RequestMethod.GET, produces = "application/json")
 	public String ping(@ValidatedHeader(name="requestId", regex="^(0|[1-9][0-9]*)$") String HeaderToValidate) {
+		System.out.println("validated header");
 		return HeaderToValidate;
 	}
 }
