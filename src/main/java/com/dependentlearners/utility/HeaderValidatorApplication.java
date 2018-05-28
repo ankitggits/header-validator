@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HeaderValidatorApplication {
 
 	public static void main(String[] args) {
+		System.out.println("Runs with default port 8080");
 		SpringApplication.run(HeaderValidatorApplication.class, args);
 	}
 
